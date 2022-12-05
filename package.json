@@ -4,7 +4,8 @@
   "description": "a node bff named dogger",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "NODE_ENV=development nodemon -e ts,ejs --exec ts-node -T ./example/app.ts",
+    "lerna": "npx lerna bootstrap"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/yihuaxiang/dogger/issues"
   },
-  "homepage": "https://github.com/yihuaxiang/dogger#readme"
+  "homepage": "https://github.com/yihuaxiang/dogger#readme",
+  "devDependencies": {
+    "learn": "^0.1.5",
+    "nodemon": "^2.0.20"
+  }
 }

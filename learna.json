@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "lib",
+    "example"
+  ],
+  "version": "0.0.1"
+}
