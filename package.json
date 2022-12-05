@@ -1,0 +1,24 @@
+{
+  "name": "dogger",
+  "version": "0.0.1",
+  "description": "a node bff named dogger",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yihuaxiang/dogger.git"
+  },
+  "keywords": [
+    "node",
+    "bff",
+    "dogger"
+  ],
+  "author": "fudongdong@fudongdong.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yihuaxiang/dogger/issues"
+  },
+  "homepage": "https://github.com/yihuaxiang/dogger#readme"
+}
