@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "fudongdong@fudongdong.com",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "dogger-core": "^0.0.1"
+  }
 }
