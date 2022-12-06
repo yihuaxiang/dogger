@@ -3,7 +3,6 @@ import vary from 'vary';
 export default async (app) => {
   const corsConfig = app.config.cors;
 
-  console.log('set cors', corsConfig);
   if(!corsConfig) {
     return;
   } else {
@@ -33,9 +32,7 @@ export default async (app) => {
 
       options.keepHeadersOnError = options.keepHeadersOnError == null || !!options.keepHeadersOnError;
 
-      console.log('return cors')
       return async function cors(ctx, next) {
-        console.log('do cors');
         const requestOrigin = ctx.get('Origin');
         ctx.vary('Origin');
 
@@ -94,6 +91,7 @@ export default async (app) => {
               const varyWithOrigin = vary.append(errHeadersSet.vary || errHeadersSet.Vary || '', 'Origin');
               delete errHeadersSet.Vary;
 
+
               err.headers = {
                 ...errHeadersSet,
                 ...headersSet,
@@ -134,5 +132,5 @@ export default async (app) => {
     }
     app.use(cors(corsConfig));
   }
-
 }
+
