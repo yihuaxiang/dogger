@@ -7,6 +7,11 @@ export default app => {
 
     // 路由类型 file | koa-router
     // router: 'file'
-    router: 'koa-router'
+    router: 'koa-router',
+
+    // koa-static 配置 
+    static: {
+
+    }
   }
 }
