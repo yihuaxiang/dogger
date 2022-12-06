@@ -31,18 +31,13 @@ export default async (app) => {
       return next();
     })
   } else if(router == 'koa-router') {
-    console.log("router == 'koa-router'")
     const routerFiles = glob.sync(path.resolve(app.appPath, './routers', `**/*${app.extName}`));
-    console.log('routerFiles', routerFiles)
     const registerRouter = async () => {
       let routers: any[] = [];
       for (let file of routerFiles) {
-        console.log('file is', file);
         const router = await import(file);
-        console.log('router is', router);
         routers.push(router.default.routes());
       }
-      console.log('routers is', routers);
       return compose(routers)
     }
     app.use(await registerRouter())
