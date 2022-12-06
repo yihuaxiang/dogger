@@ -12,6 +12,11 @@ export default app => {
     // koa-static 配置 
     static: {
 
+    },
+
+    cors: {
+      origin: 'https://z.wiki',
+      maxAge: 0
     }
   }
 }
