@@ -19,6 +19,10 @@ export default app => {
       maxAge: 0
     },
 
-    middlewares: ['two', 'one']
+    middlewares: ['two', 'one'],
+    login: {
+      needLogin: true,
+      secret: 'dEo38V'
+    }
   }
 }
