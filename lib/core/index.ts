@@ -3,7 +3,7 @@ import path from 'path';
 import { getHooks, deepMerge } from './utils';
 import { Hook, App } from './types';
 
-const hooks = ['login', 'lift', 'router', 'static', 'cors', 'custom-middlewares'];
+const hooks = ['login', 'lift', 'router', 'static', 'cors', 'custom-middlewares', 'view'];
 
 type Params = {
   appPath: string;

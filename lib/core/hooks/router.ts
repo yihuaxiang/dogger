@@ -26,7 +26,8 @@ export default async (app) => {
       if(routerMap[key]) {
         await routerMap[key](ctx);
       } else {
-        ctx.body = 'no this router';
+        await ctx.render('404');
+        // ctx.body = 'no this router';
       }
       return next();
     })

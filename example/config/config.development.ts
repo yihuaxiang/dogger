@@ -23,6 +23,10 @@ export default app => {
     login: {
       needLogin: true,
       secret: 'dEo38V'
+    },
+
+    view: {
+      extension: 'ejs'
     }
   }
 }
