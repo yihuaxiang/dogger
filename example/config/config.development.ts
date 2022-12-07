@@ -17,6 +17,8 @@ export default app => {
     cors: {
       origin: 'https://z.wiki',
       maxAge: 0
-    }
+    },
+
+    middlewares: ['two', 'one']
   }
 }
